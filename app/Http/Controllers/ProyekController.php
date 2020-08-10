@@ -8,6 +8,7 @@ use DB;
 class ProyekController extends Controller
 {
     public function create(){
+        return view('formCreateProject');
 
     }
 

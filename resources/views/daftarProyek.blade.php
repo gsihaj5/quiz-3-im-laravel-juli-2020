@@ -20,21 +20,29 @@
         style="width: 100%;" width="100%" cellspacing="0"
     >
       <thead>
-<tr>
-<th>#</th>
-<th></th>
-</tr>
-
+        <tr>
+            <th>#</th>
+            <th>nama</th>
+            <th>deskripsi</th>
+            <th>tanggal_mulai</th>
+            <th>deadline</th>
+            <th>status</th>
+        </tr>
       </thead>
       <tbody>
-
         @forelse($proyek as $key => $proyek)
-            test
+            
         @empty
             kosong
         @endforelse
       </tbody>
     </table>
+    <a href="/proyek/create" class="btn btn-success btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-check"></i>
+        </span>
+        <span class="text">Add Proyek</span>
+    </a>
   </div>
 </div>
 </div> 
